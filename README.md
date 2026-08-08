@@ -22,3 +22,20 @@ The system allows participants to browse and register for workshops, trainers to
 
 ## Academic Project
 Developed as part of the Advanced Programming course.
+
+## Screenshots
+
+### Login
+![Login Screen](login.png)
+
+### Participant Dashboard
+![Participant Dashboard](participant-dashboard.png)
+
+### Trainer Dashboard
+![Trainer Dashboard](trainer-dashboard.png)
+
+### Administrator Dashboard
+![Administrator Dashboard](admin-dashboard.png)
+
+### User Management
+![Manage Users](manage-users.png)
