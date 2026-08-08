@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="640.0" prefWidth="700.0"
+            style="-fx-background-color: #f4f6f7;"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="online_workshop_regisration_syastem_project.controllers.trainer.UpdateWorkshopController">
+
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #16a085; -fx-padding: 18;">
+            <Label text="Update Workshop"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="15.0">
+            <padding>
+                <Insets top="20.0" right="25.0" bottom="20.0" left="25.0" />
+            </padding>
+
+            <!-- Workshop picker section -->
+            <Label text="1) Select a workshop to update:"
+                   style="-fx-font-weight: bold; -fx-text-fill: #0e6655;" />
+
+            <GridPane fx:id="workshopsGrid" hgap="15.0" vgap="10.0" style="-fx-background-color: white; -fx-padding: 12;">
+                <Label text="Title" style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label text="Capacity" style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Action" style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            </GridPane>
+
+            <!-- Edit form section -->
+            <Label text="2) Edit the workshop details:"
+                   style="-fx-font-weight: bold; -fx-text-fill: #0e6655;" />
+
+            <GridPane hgap="12.0" vgap="12.0" style="-fx-background-color: white; -fx-padding: 16;">
+
+                <Label text="Title:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="titleField" promptText="Workshop title" prefWidth="320.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Description:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="descriptionField" promptText="Short description" prefWidth="320.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Date:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="dateField" promptText="YYYY-MM-DD" prefWidth="320.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Capacity:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="capacityField" promptText="Max participants" prefWidth="320.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </GridPane>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 15;">
+            <Button fx:id="saveButton" text="Save" prefWidth="140.0"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16 8 16;" />
+            <Button fx:id="cancelButton" text="Cancel" prefWidth="140.0"
+                    style="-fx-background-color: #566573; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16 8 16;" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

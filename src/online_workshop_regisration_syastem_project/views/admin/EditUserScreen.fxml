@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="540.0" prefWidth="580.0"
+            style="-fx-background-color: #f4f6f7;"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="online_workshop_regisration_syastem_project.controllers.admin.EditUserController">
+
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #16a085; -fx-padding: 18;">
+            <Label text="Edit User"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15.0">
+            <padding>
+                <Insets top="25.0" right="40.0" bottom="20.0" left="40.0" />
+            </padding>
+
+            <Label text="Edit user details:"
+                   style="-fx-font-weight: bold; -fx-text-fill: #0e6655;" />
+
+            <GridPane hgap="12.0" vgap="14.0" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 20;">
+
+                <Label text="Name:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="nameField" promptText="Full name" prefWidth="280.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Email:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="emailField" promptText="Email address" prefWidth="280.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Password:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <PasswordField fx:id="passwordField" promptText="Password" prefWidth="280.0"
+                               GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Role:"
+                       style="-fx-font-weight: bold; -fx-text-fill: #0e6655;"
+                       GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <HBox spacing="15.0" alignment="CENTER_LEFT"
+                      GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <RadioButton fx:id="participantRadio" text="Participant" selected="true"
+                                 style="-fx-text-fill: #0e6655; -fx-font-weight: bold;">
+                        <toggleGroup>
+                            <ToggleGroup fx:id="roleGroup" />
+                        </toggleGroup>
+                    </RadioButton>
+                    <RadioButton fx:id="trainerRadio" text="Trainer"
+                                 toggleGroup="$roleGroup"
+                                 style="-fx-text-fill: #0e6655; -fx-font-weight: bold;" />
+                    <RadioButton fx:id="adminRadio" text="Administrator"
+                                 toggleGroup="$roleGroup"
+                                 style="-fx-text-fill: #0e6655; -fx-font-weight: bold;" />
+                </HBox>
+            </GridPane>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 15;">
+            <Button fx:id="saveButton" text="Save" prefWidth="140.0"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16 8 16;" />
+            <Button fx:id="cancelButton" text="Cancel" prefWidth="140.0"
+                    style="-fx-background-color: #566573; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16 8 16;" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
