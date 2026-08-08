@@ -37,5 +37,5 @@ Developed as part of the Advanced Programming course.
 ### Administrator Dashboard
 ![Administrator Dashboard](admin-dashboard.png)
 
-### User Management
+### Manage Users
 ![Manage Users](manage-users.png)
