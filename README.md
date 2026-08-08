@@ -26,16 +26,16 @@ Developed as part of the Advanced Programming course.
 ## Screenshots
 
 ### Login
-![Login Screen](login.png)
+![Login Screen](screenshots/login.png)
 
 ### Participant Dashboard
-![Participant Dashboard](participant-dashboard.png)
+![Participant Dashboard](screenshots/participant-dashboard.png)
 
 ### Trainer Dashboard
-![Trainer Dashboard](trainer-dashboard.png)
+![Trainer Dashboard](screenshots/trainer-dashboard.png)
 
 ### Administrator Dashboard
-![Administrator Dashboard](admin-dashboard.png)
+![Administrator Dashboard](screenshots/admin-dashboard.png)
 
 ### Manage Users
-![Manage Users](manage-users.png)
+![Manage Users](screenshots/manage-users.png)
