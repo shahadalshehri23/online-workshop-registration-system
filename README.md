@@ -23,6 +23,16 @@ The system allows participants to browse and register for workshops, trainers to
 ## Academic Project
 Developed as part of the Advanced Programming course.
 
+## How to Run
+
+1. Clone or download this repository.
+2. Open the project in NetBeans.
+3. Make sure MySQL Server is installed and running.
+4. Create the database by running the provided `database_script.sql` file.
+5. Open `src/dao/DatabaseConnection.java` and replace `YOUR_PASSWORD` with your MySQL password.
+6. Make sure the MySQL JDBC Driver is added to the project libraries.
+7. Build and run the project in NetBeans.
+
 ## Screenshots
 
 ### Login
